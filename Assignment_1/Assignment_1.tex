@@ -289,48 +289,63 @@ columns=fullflexible
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle
 
-\textbf{12.13.6.13: Question}. Assume that the chances of a patient having a heart attack is \(40\%\). It is also assumed that a meditation and yoga course reduce the risk of heart attack by \(30\%\) and prescription of certain drug reduces its chances by \(25\%\). At a time a patient can choose any one of the two options with equal probabilities. It is given that after going through one of the two options the patient selected at random suffers a heart attack. Find the probability that the patient followed a course of meditation and yoga?\\
-\textbf{Answer: \(\frac{14}{29}\).}\\
+\textbf{12.13.6.13: Question}. Assume that the chances of a patient having a heart attack is $40\%$. It is also assumed that a meditation and yoga course reduce the risk of heart attack by $30\%$ and prescription of certain drug reduces its chances by $25\%$. At a time a patient can choose any one of the two options with equal probabilities. It is given that after going through one of the two options the patient selected at random suffers a heart attack. Find the probability that the patient followed a course of meditation and yoga?
 
-
-
+\textbf{Answer: $\frac{14}{29}$.}
 
 \textbf{Solution}:
-According to the given question: the chances of heart attack is \(40\%\).\\
-Let:\\
-A:	Person with heart attack\\
-\(E_1\):	Person who is treated with meditation and yoga\\
-\(E_2\):	Person who is treated with drug
-\begin{align*}
-&Given,\,\,P(A)\,=\,40\%\,=\,0.40
-\end{align*}
+According to the given question: the chances of heart attack is $40\%$.
+
+Let:
+
+A:	Person with heart attack
+
+$E_1$:	Person who is treated with meditation and yoga
+
+$E_2$:	Person who is treated with drug
+
+\begin{align}
+	\label{eq:1}
+	&Given,\,\,\pr{A}\,=\,40\%\,=\,0.40
+\end{align}
 Also, the probabilities of meditation and yoga and drug is equal so.
-\begin{align*}
-&P(E_1)\,=\,\frac{1}{2}\,,\,P(E_2)\,=\,\frac{1}{2}
-\end{align*}
+\begin{align}
+	\label{eq:2}
+	&\pr{E_1}\,=\,\frac{1}{2}\,,\,\pr{E_2}\,=\,\frac{1}{2}
+\end{align}
 In this question we have to find the probability of a person getting a heart attack and is followed with meditation and yoga.
-i.e. \(P(E_1|A)\)
+i.e. $\pr{E_1|A}$
+\begin{align}
+	\label{eq:3}
+	&\pr{E_1|A}\,=\,\frac{\pr{E_1}.\pr{A|E_1}}{\pr{E_1}.\pr{A|E_1}+\pr{E_2}.\pr{A|E_2}}
+\end{align}
+Now we have to find $\pr{A|E_1}$ and $\pr{A|E_2}$.
+
+$\pr{A|E_1}$ = Probability that a person getting a heart attack after being treated with meditation and yoga.
+
+Meditation and yoga reduces the risk of a heart attack by $30\%$. There is still a $70\%$ chance of heart attack.
+\begin{align}
+	\label{eq:4}
+	&\pr{A|E_1} = 0.40\,X\,0.70 = 0.28
+\end{align}
+
+$\pr{A|E_2}$ = Probability that a person getting a heart attack after being treated with drug.
+
+Drug reduces the risk of a heart attack by $25\%$. There is still a $75\%$ chance of heart attack.
+\begin{align}
+	\label{eq:5}
+	&\pr{A|E_2} = 0.40\,X\,0.75 = 0.30
+\end{align}
+
+Using \eqref{eq:3},\eqref{eq:4} and \eqref{eq:5}
+
 \begin{align*}
-&P(E_1|A)\,=\,\frac{P(E_1).P(A|E_1)}{P(E_1).P(A|E_1)+P(E_2).P(A|E_2)}
+	&\pr{E_1|A} = \frac{\pr{E_1}.\pr{A|E_1}}{\pr{E_1}.\pr{A|E_1}+\pr{E_2}.\pr{A|E_2}}
 \end{align*}
-Now we have to find \(P(A|E_1)\) and \(P(A|E_2)\).\\
-\(P(A|E_1)\) = Probability that a person getting a heart attack after being treated with meditation and yoga.\\
-Meditation and yoga reduces the risk of a heart attack by \(30\%\). There is still a \(70\%\) chance of heart attack.
 \begin{align*}
-&P(A|E_1) = 0.40\,X\,0.70 = 0.28
-\end{align*}
-\(P(A|E_2)\) = Probability that a person getting a heart attack after being treated with drug.\\
-Drug reduces the risk of a heart attack by \(25\%\). There is still a \(75\%\) chance of heart attack.
-\begin{align*}
-&P(A|E_2) = 0.40\,X\,0.75 = 0.30
-\end{align*}
-\begin{align*}
-&P(E_1|A) = \frac{P(E_1).P(A|E_1)}{P(E_1).P(A|E_1)+P(E_2).P(A|E_2)}
-\end{align*}
-\begin{align*}
-&= \frac{\frac{1}{2}X0.28}{\frac{1}{2}X0.28\,+\,\frac{1}{2}X0.30}\\
-&= \frac{0.28}{0.28\,+\,0.30}\\
-&= \frac{0.28}{0.58}\\
-&= \frac{14}{29}\\
+	&= \frac{\frac{1}{2}X0.28}{\frac{1}{2}X0.28\,+\,\frac{1}{2}X0.30}
+	&= \frac{0.28}{0.28\,+\,0.30}
+	&= \frac{0.28}{0.58}
+	&= \frac{14}{29}
 \end{align*}
 \end{document}
