@@ -19,6 +19,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
+\usepackage{caption}
 %
 %\usepackage{setspace}
 %\usepackage{gensymb}
@@ -297,15 +298,15 @@ columns=fullflexible
 According to the given question: the chances of heart attack is $40\%$.
 
 According to the question:
-\begin{table}[htb]
-\begin{tabular}{lll}
-A:	&Person with heart attack	&Pr(A)=0.40\\
-E1:	&Person who is treated with meditation and yoga	&Pr(E1)=0.50\\
-E2:	&Person who is treated with drug	&Pr(E2)=0.50\\
+\begin{table}[htbp]
+\begin{tabular}{|l|l|l|}\hline
+A:	&Person with heart attack	&Pr(A)=0.40\\\hline
+E1:	&Person treated with meditation and yoga	&Pr(E1)=0.50\\\hline
+E2:	&Person treated with drug	&Pr(E2)=0.50\\\hline
 \end{tabular}
 \end{table}
 
-In this question we have to find the probability of a person getting a heart attack and is followed with meditation and yoga.
+Here, we are supposed to find the probability of a person getting a heart attack and is followed with meditation and yoga.
 i.e. $\pr{E_1|A}$
 
 \begin{align}
