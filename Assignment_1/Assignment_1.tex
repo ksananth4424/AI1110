@@ -300,9 +300,9 @@ According to the given question: the chances of heart attack is $40\%$.
 According to the question:
 \begin{table}[htbp]
 \begin{tabular}{|l|l|l|}\hline
-A:	&Person with heart attack	&Pr(A)=0.40\\\hline
-E1:	&Person treated with meditation and yoga	&Pr(E1)=0.50\\\hline
-E2:	&Person treated with drug	&Pr(E2)=0.50\\\hline
+A:	&Person with heart attack	&$\pr{A}$=0.40\\\hline
+$E_1$:	&Person treated with meditation and yoga	&$\pr{E_1}$=0.50\\\hline
+$E_2$:	&Person treated with drug	&$\pr{E_2}$=0.50\\\hline
 \end{tabular}
 \end{table}
 
@@ -320,6 +320,9 @@ $\pr{A|E_1}$ = Probability that a person getting a heart attack after being trea
 
 Meditation and yoga reduces the risk of a heart attack by $30\%$. There is still a $70\%$ chance of heart attack.
 \begin{align}
+	\pr{A|E_1} = \pr{A}(1-(0.30))
+\end{align}
+\begin{align}
 	\label{eq:4}
 	\pr{A|E_1} = 0.40 \times 0.70 = 0.28
 \end{align}
@@ -327,6 +330,9 @@ Meditation and yoga reduces the risk of a heart attack by $30\%$. There is still
 $\pr{A|E_2}$ = Probability that a person getting a heart attack after being treated with drug.
 
 Drug reduces the risk of a heart attack by $25\%$. There is still a $75\%$ chance of heart attack.
+\begin{align}
+	\pr{A|E_2} = \pr{A}(1-(0.25))
+\end{align}
 \begin{align}
 	\label{eq:5}
 	\pr{A|E_2} = 0.40 \times 0.75 = 0.30
