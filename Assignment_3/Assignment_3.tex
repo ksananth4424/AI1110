@@ -335,7 +335,7 @@ Putting x=5 in \eqref{eq:1}
 (ii) Probability at least 5 successes.\\
 Using \eqref{eq:1}:
 \begin{align}
-	\pr{X \ge 5} = \pr{X=5} + \pr{X=6}
+	F_X(6) - F_X(4) = \pr{X=5} + \pr{X=6}
 \end{align}
 \begin{align}
 	= \comb{6}{5} (0.5)^{6} + \comb{6}{6} (0.5)^{6}
@@ -348,7 +348,7 @@ Using \eqref{eq:1}:
 (iii) Probability at most 5 successes.\\
 using \eqref{eq:1}
 \begin{align}
-	\pr{X \le 5} = 1 - \pr{X=6} 
+	F_X(5) = 1 - \pr{X=6} 
 \end{align}
 \begin{align}
 	= 1 - \comb{6}{6} (0.5)^{6}
