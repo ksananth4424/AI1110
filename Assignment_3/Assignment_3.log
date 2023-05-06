@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  6 MAY 2023 12:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  6 MAY 2023 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1210,36 +1210,32 @@ Package caption Info: End \AtBeginDocument code.
 \c@lemma=\count344
 \c@example=\count345
 \c@rem=\count346
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 3
+01.
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-99.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-99.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 3
+01.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-99.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 3
+01.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-99.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 3
+01.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2
-99.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 3
+01.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
@@ -1253,10 +1249,10 @@ Package rerunfilecheck Info: File `Assignment_3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30307 strings out of 478287
- 598284 string characters out of 5849289
- 861957 words of memory out of 5000000
- 47877 multiletter control sequences out of 15000+600000
+ 30318 strings out of 478287
+ 598420 string characters out of 5849289
+ 865957 words of memory out of 5000000
+ 47880 multiletter control sequences out of 15000+600000
  535312 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,9n,96p,504b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1266,10 +1262,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_3.pdf (1 page, 46726 bytes).
+Output written on Assignment_3.pdf (1 page, 47144 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

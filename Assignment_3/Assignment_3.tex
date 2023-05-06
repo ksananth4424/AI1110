@@ -291,10 +291,12 @@ columns=fullflexible
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle
 
-\textbf{12.13.5.1: Question}. A die is thrown 6 times. If 'getting an odd number' is a success, find the probability of\\
-(i) 5 successes?\\
-(ii) at least 5 successes?\\
-(iii) at most 5 successes?\\
+\textbf{12.13.5.1: Question}. A die is thrown 6 times. If 'getting an odd number' is a success, find the probability of
+\begin{enumerate}[label=(\roman*)]
+\item 5 successes?
+\item at least 5 successes?
+\item at most 5 successes?
+\end{enumerate}
 
 \textbf{Answer: (i) $\frac{3}{32}$, (ii) $\frac{7}{64}$, (iii) $\frac{63}{64}$.}
 
@@ -320,8 +322,8 @@ Throwing a die and getting an odd ar an even is a bernoulli event. So, X has a b
 	= \comb{6}{x} (0.5)^{6}
 \end{align}
 
-
-(i) Probability 5 successes.\\
+\begin{enumerate}[label=(\roman*)]
+\item Probability 5 successes.\\
 Putting x=5 in \eqref{eq:1}
 \begin{align}
 	\pr{X=5} = \comb{6}{5} (0.5)^{6}
@@ -332,10 +334,13 @@ Putting x=5 in \eqref{eq:1}
 \end{align}
 
 
-(ii) Probability at least 5 successes.\\
+\item Probability at least 5 successes.\\
 Using \eqref{eq:1}:
 \begin{align}
-	F_X(6) - F_X(4) = \pr{X=5} + \pr{X=6}
+	\pr{X \ge 5} = F_X(6) - F_X(4)
+\end{align}
+\begin{align}
+	= \pr{X=5} + \pr{X=6}
 \end{align}
 \begin{align}
 	= \comb{6}{5} (0.5)^{6} + \comb{6}{6} (0.5)^{6}
@@ -345,10 +350,13 @@ Using \eqref{eq:1}:
 \end{align}
 
 
-(iii) Probability at most 5 successes.\\
+\item Probability at most 5 successes.\\
 using \eqref{eq:1}
 \begin{align}
-	F_X(5) = 1 - \pr{X=6} 
+	\pr{X \le 5} = F_X(5)
+\end{align}
+\begin{align} 
+	= 1 - \pr{X=6}
 \end{align}
 \begin{align}
 	= 1 - \comb{6}{6} (0.5)^{6}
@@ -358,4 +366,5 @@ using \eqref{eq:1}
 	= 1 - \frac{1}{64}
 	= \frac{63}{64}
 \end{align}
+\end{enumerate}
 \end{document}
