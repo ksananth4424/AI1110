@@ -311,22 +311,22 @@ columns=fullflexible
 Let X: Number of times we get odd numbers in 6 throws of a die.
 Throwing a die and getting an odd ar an even is a bernoulli event. So, X has a binomial distribution.
 \begin{align}
-	\pr{X=x} = \comb{n}{x} q^{n-x} p^{x}
+	\pr{X=k} = P_X(k) = \comb{n}{k} q^{n-k} p^{k}
 \end{align}
 \begin{align}
-	\pr{X=x} = \comb{n}{x} (0.5)^{n-x} (0.5)^{x}
-	= \comb{n}{x} (0.5)^{n-x+x}
+	P_X(k) = \comb{n}{k} (0.5)^{n-k} (0.5)^{k}
+	= \comb{n}{k} (0.5)^{n-k+k}
 \end{align}
 \begin{align}
 	\label{eq:1}
-	= \comb{6}{x} (0.5)^{6}
+	= \comb{6}{k} (0.5)^{6}
 \end{align}
 
 \begin{enumerate}[label=(\roman*)]
 \item Probability 5 successes.\\
 Putting x=5 in \eqref{eq:1}
 \begin{align}
-	\pr{X=5} = \comb{6}{5} (0.5)^{6}
+	P_X(5) = \comb{6}{5} (0.5)^{6}
 \end{align}
 \begin{align}
 	= 6 \times \frac{1}{64}
@@ -340,7 +340,7 @@ Using \eqref{eq:1}:
 	\pr{X \ge 5} = F_X(6) - F_X(4)
 \end{align}
 \begin{align}
-	= \pr{X=5} + \pr{X=6}
+	= P_X(5) + P_X(6)
 \end{align}
 \begin{align}
 	= \comb{6}{5} (0.5)^{6} + \comb{6}{6} (0.5)^{6}
@@ -356,7 +356,7 @@ using \eqref{eq:1}
 	\pr{X \le 5} = F_X(5)
 \end{align}
 \begin{align} 
-	= 1 - \pr{X=6}
+	= 1 - P_X(6)
 \end{align}
 \begin{align}
 	= 1 - \comb{6}{6} (0.5)^{6}
