@@ -310,7 +310,7 @@ Throwing a die and getting 6 or a number other tha 6 is a bernoulli event. So, X
 \end{align}
 \begin{align}
 	\label{eq:1}
-	P_X(k) = \comb{6}{k} (\tfrac{5}{6})^{6-k} (\tfrac{1}{6})^{k}
+	P_X(k) = \comb{6}{k} (\frac{5}{6})^{6-k} (\frac{1}{6})^{k}
 \end{align}
 We are supposed to find probability of throwing at most 2 sixes i.e. \pr{X \le 2}.
 
@@ -323,19 +323,11 @@ We are supposed to find probability of throwing at most 2 sixes i.e. \pr{X \le 2
 \end{align}
 Using \eqref{eq:1} in \eqref{eq:2}:
 \begin{align}
-	= \comb{6}{0} (\tfrac{5}{6})^{6} (\tfrac{1}{6})^{0} + \comb{6}{1} (\tfrac{5}{6})^{5} (\tfrac{1}{6})^{1} + \comb{6}{2} (\tfrac{5}{6})^{4} (\tfrac{1}{6})^{2}
-\end{align}
-\begin{align}
-	= ({\tfrac{5}{6}})^{6} + ({\tfrac{5}{6}})^{5} + \tfrac{5}{12} \times ({\tfrac{5}{6}})^{4}
-\end{align}
-\begin{align}
-	= ({\tfrac{5}{6}})^{4}(\tfrac{25}{36} + \tfrac{5}{6} + \tfrac{5}{12})
-\end{align}
-\begin{align}
-	= ({\tfrac{5}{6}})^{4}(\tfrac{70}{36})
-\end{align}
-\begin{align}
-	= \tfrac{35}{18}({\tfrac{5}{6}})^{4}
+	&= \comb{6}{0} (\frac{5}{6})^{6} (\frac{1}{6})^{0} + \comb{6}{1} (\frac{5}{6})^{5}(\frac{1}{6})^{1} + \comb{6}{2} (\frac{5}{6})^{4} (\frac{1}{6})^{2}\\
+	&= ({\frac{5}{6}})^{6} + ({\frac{5}{6}})^{5} + \frac{5}{12} \times ({\frac{5}{6}})^{4}\\
+	&= ({\frac{5}{6}})^{4}(\frac{25}{36} + \frac{5}{6} + \frac{5}{12})\\
+	&= ({\frac{5}{6}})^{4}(\frac{70}{36})\\
+	&= \frac{35}{18}({\frac{5}{6}})^{4}
 \end{align}\\
 
 So,the required probability is $\frac{35}{18}({\frac{5}{6}})^{4}$.
