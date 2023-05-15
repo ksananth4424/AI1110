@@ -312,8 +312,32 @@ The amount of money the person will have after n tosses is:
 The probability of getting a profit/loss obtained in \eqref{eq:1} is:
 \begin{align}
 	\label{eq:2}
-	\pr{X=k} = P_X(k) = \comb{n}{k} (0.5)^{k} (0.5)^{n-k} 
-\end{align}\\
+	\pr{X=k} &= P_X(k) = \comb{n}{k} (0.5)^{k} (0.5)^{n-k} 
+	&= \comb{n}{k} (0.5)^{n} 
+\end{align}
+Let $F_X\brak{k}$ denote the cumulative distribution function of $X$:\\
+\begin{align}
+	\label{eq:3}
+	F_X\brak{k} = \pr{X\le k} &= \sum_{i=0}^{i=k}{\comb{n}{i}\brak{\frac{1}{2}}^n}
+\end{align}
+Let $F_A\brak{k}$ denote the cumulative distribution function of $A$:\\
+\begin{align}
+	F_A(k) &= \pr{A\le k}\\
+        &=\pr{2.5X-1.5n \le k}\\
+        &=\pr{X \le \frac{k+1.5n}{2.5}} \\
+	&=F_X\brak{\frac{k+1.5n}{2.5}}
+\end{align}
+By \eqref{eq:3}
+\begin{align}
+        &= \sum_{i=0}^{i=\lfloor \frac{k+1.5n}{2.5} \rfloor}{\comb{n}{i}\brak{\frac{1}{2}}^n}
+\end{align}
+$$
+p_A\brak{k}=
+\begin{cases}
+\comb{n}{\frac{k+1.5n}{2.5}}\brak{\frac{1}{2}}^n,&\frac{k+1.5n}{2.5}\in I \text{ and }0\le \frac{k+1.5n}{2.5} \le n\\
+0,&\text{otherwise}
+\end{cases}
+$$
 Now, for 4 tosses as given in the question:
 \begin{table}[h]
 \label{table:1}
