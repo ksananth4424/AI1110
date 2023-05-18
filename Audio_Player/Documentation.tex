@@ -296,10 +296,10 @@ columns=fullflexible
 \section{\textbf{Introduction}}
 This report presents an analysis of a Python script for a music player application. The application allows users to play random songs from a predefined set of audio files. The code utilizes the Tkinter and Pygame libraries for creating the graphical user interface and handling audio playback, respectively.Also the playlist created has undergone shuffling which is completely random and uniform. 
 
-\section{\textbf{Code Explanation}}
+\section{\textbf{Code}}
 The code consists of several components, including the initialization of required modules, the definition of variables and functions, and the implementation of music playback controls. Here's a breakdown of the code:
 
-\subsection{Importing Required Modules}
+\subsection{Modules Imported}
 The following modules are imported:
 \begin{itemize}
     \item \text{numpy} - Used for generating random numbers.
@@ -308,15 +308,13 @@ The following modules are imported:
     \item \text{pygame} - Used for handling audio playback.
 \end{itemize}
 
-\subsection{Defining Variables and Functions}
+\subsection{Variables and Functions}
 The code defines the following variables and functions:
 \begin{itemize}
     \item \text{audio} - An empty list that stores the paths of audio files.
     \item \text{Play()} - A function that generates random song paths and populates the \text{audio} list with unique songs.
 \end{itemize}
 
-\subsection{Initializing the MusicPlayer Class}
-The \text{MusicPlayer} class represents the music player application. It initializes the user interface elements using Tkinter and sets up the Pygame mixer for audio playback.
 
 \subsection{Implementing Music Playback Controls}
 The \text{MusicPlayer} class includes methods for controlling music playback:
@@ -325,10 +323,10 @@ The \text{MusicPlayer} class includes methods for controlling music playback:
     \item \text{next\_music()} - Stops the current song playback and plays the next random song from the \texttt{audio} list.
     \item \text{pause\_music()} - Pauses the currently playing song.
     \item \text{unpause\_music()} - Resumes the paused song.
+    \item \text{check\_end()} - Checks if song has ended.
 \end{itemize}
 
-\subsection{Creating the Application Window}
-The script creates a Tkinter window and an instance of the \text{MusicPlayer} class, passing the window object as a parameter. The Tkinter event loop is started using the \text{root.mainloop()} function.
+
 
 \section{\textbf{Images}}
 \begin{enumerate}
@@ -345,6 +343,9 @@ The script creates a Tkinter window and an instance of the \text{MusicPlayer} cl
 		\label{fig2}
 	\end{figure}\\\\
 \end{enumerate}
+
+The code for this \textbf{Audio Player} can be found at \textbf{https://github.com/ksananth4424/AI1110/blob/main\\/Audio\_Player/audioplayer.py}
+
 \section{\textbf{Conclusion}}
 The presented code demonstrates a simple music player application with basic playback controls. It utilizes the Tkinter and Pygame libraries to provide a graphical user interface and handle audio playback. By understanding the code's structure and components, you can further customize and enhance the music player functionality.
 \end{document}

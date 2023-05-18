@@ -46,10 +46,12 @@ class MusicPlayer:
         pygame.mixer.init()
         self.musicPlaying = False
     
-    def autoplay(self):
-        if pygame.mixer.music.get_busy():
-            self.play_music(audio)
-        
+    def check_end(self):
+        if not pygame.mixer.music.get_busy() and self.musicPlaying:
+            self.next_music()
+        else:
+            self.window.after(100,self.check_end)
+            
     def play_music(self):
         # self.audio=Play(audio)
         if(len(audio)==0):
@@ -62,8 +64,8 @@ class MusicPlayer:
                  rely = 1.0,
                  anchor = 'sw')
         print(a)
-        self.autoplay
         self.musicPlaying = True
+        self.window.after(100,self.check_end)
         
     def next_music(self):
         pygame.mixer.music.stop()
@@ -80,9 +82,10 @@ class MusicPlayer:
         self.musicPlaying = True
     
     def pause_music(self):
-        if self.musicPlaying:
+        self.musicPlaying = False
+        if not self.musicPlaying:
             pygame.mixer.music.pause()
-            self.musicPlaying = False
+            
             
     def unpause_music(self):
         if not self.musicPlaying:
